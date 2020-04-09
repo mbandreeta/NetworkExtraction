@@ -33,7 +33,7 @@ The validate file contains:
 
 
 
-_skel.txt  : contains the edges of the medial axis, the file contains three columns:
+_skel.txt  : contains the edges of the medial axis, composed by three columns:
 
 	pore1_id pore2_id throat_diameter
 
