@@ -6,7 +6,7 @@ This is a executable program for extracting a Medial Axis Pore Network from bina
 Here I have also included python scripts to load and save NIFITI type images using nibabel
 
 The output are .txt files:
-	_validate.txt 
+	_validate.txt \n
 	_skel.txt
 	_nodes_skel.txt
 	_all_nodes.txt
@@ -51,6 +51,7 @@ _nodes_skel.txt : contains the node information of the spheres selected of the m
 	contact_surface: Sphere's contact area, an estimate of the voxels assigned to that sphere's volume that also belong to the pore space internal surface 
 
 _all_nodes.txt : is the collection of all maximal spheres that completely fill the volume, the file is organized the same way as _nodes_skel.txt
+
 _edges_graph.txt : the connections between spheres, this file is organized as _skel.txt
 
 
