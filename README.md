@@ -37,14 +37,14 @@ _skel.txt  : contains the edges of the medial axis, the file is organized as:
 
 	pore1_id pore2_id throat_diameter
 
-_nodes_skel.txt : contains the node information of the spheres selected of the medial axis, the file is organized as:
+_nodes_skel.txt : contains the node information of the spheres selected of the medial axis, the file is organized as follows:
 
 	nodeId x_index y_index z_index radius isBorder border_type  volume contact_surface
 
-	x_index,y_index,z_index : sphere's center position
-	radius: sphere's radius
-	isBorder: is sphere is near the borders of the volume, this is set to 1, 0 otherwise
-	border_type: integer value to identify the face that the sphere is connected to
+	x_index,y_index,z_index : sphere's center position;
+	radius: sphere's radius;
+	isBorder: integer value. Set to 1 if the sphere touches volume borders, 0 otherwise;
+	border_type: integer value to identify the face that the sphere is connected to;
 
 	border_type = 1;:"inlet_x";	
 	border_type = 2;:"inlet_y";	
@@ -54,8 +54,8 @@ _nodes_skel.txt : contains the node information of the spheres selected of the m
 	border_type = 5;:"outlet_y";
 	border_type = 6;:"outlet_z";
 	
-	volume: Sphere's assigned volume in voxels.Each voxel is assigned to one sphere only.
-	contact_surface: Sphere's contact area, an estimate of the voxels assigned to that sphere's volume that also belong to the pore space internal surface 
+	volume: Sphere's assigned volume in voxels. Each voxel is assigned to one sphere only;
+	contact_surface: Sphere's contact area, an estimate of the voxels assigned to that sphere's volume that also belong to the pore space internal surface. 
 
 _all_nodes.txt : is the collection of all maximal spheres that completely fill the volume, the file is organized the same way as _nodes_skel.txt
 
