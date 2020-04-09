@@ -11,7 +11,7 @@ This is a executable program for extracting a Medial Axis Pore Network from bina
 
 The input parameters are NIFITI type volume data and the voxel resolution (usually in micrometers). The choice for NIFITI is to include Magnetic Resonance Imaging related images. The networkIO file includes python scripts to load and save NIFITI type images using nibabel.
 
-The output are .txt files:
+The output are four text files:
 
 	_validate.txt 
 	_skel.txt
