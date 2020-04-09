@@ -6,7 +6,7 @@ This is a executable program for extracting a Medial Axis Pore Network from bina
 Here I have also included python scripts to load and save NIFITI type images using nibabel
 
 The output are .txt files:
-	_validate.txt \n
+	_validate.txt 
 	_skel.txt
 	_nodes_skel.txt
 	_all_nodes.txt
