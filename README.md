@@ -33,11 +33,11 @@ The validate file contains:
 
 
 
-_skel.txt  : contains the edges of the medial axis, the file is organized as:
+_skel.txt  : contains the edges of the medial axis, the file contains three columns:
 
 	pore1_id pore2_id throat_diameter
 
-_nodes_skel.txt : contains the node information of the spheres selected of the medial axis, the file is organized as follows:
+_nodes_skel.txt : contains the node information of the spheres that composes medial axis network. The file is organized as follows:
 
 	nodeId x_index y_index z_index radius isBorder border_type  volume contact_surface
 
@@ -60,12 +60,4 @@ _nodes_skel.txt : contains the node information of the spheres selected of the m
 _all_nodes.txt : is the collection of all maximal spheres that completely fill the volume, the file is organized the same way as _nodes_skel.txt
 
 _edges_graph.txt : the connections between spheres, this file is organized as _skel.txt
-
-
-
-
-
-
-
-
 
