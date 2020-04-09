@@ -35,14 +35,16 @@ The validate file contains:
 
 _skel.txt  : contains the edges of the medial axis, composed by three columns:
 
-	pore1_id pore2_id throat_diameter
+	sphere1_id sphere2_id connection_diameter
+	sphere1_id and sphere2_id: integers, indicating the connections between two spheres;
+	connection_diameter: float value, the diameter of the connection.
 
 _nodes_skel.txt : contains the node information of the spheres that composes medial axis network. The file is organized as follows:
 
-	nodeId x_index y_index z_index radius isBorder border_type  volume contact_surface
+	sphere_id x_index y_index z_index radius isBorder border_type  volume contact_surface
 
-	x_index,y_index,z_index : sphere's center position;
-	radius: sphere's radius;
+	x_index,y_index,z_index : integers, sphere's center position;
+	radius: float, sphere's radius;
 	isBorder: integer value. Set to 1 if the sphere touches volume borders, 0 otherwise;
 	border_type: integer value to identify the face that the sphere is connected to;
 
@@ -54,8 +56,8 @@ _nodes_skel.txt : contains the node information of the spheres that composes med
 	border_type = 5;:"outlet_y";
 	border_type = 6;:"outlet_z";
 	
-	volume: Sphere's assigned volume in voxels. Each voxel is assigned to one sphere only;
-	contact_surface: Sphere's contact area, an estimate of the voxels assigned to that sphere's volume that also belong to the pore space internal surface. 
+	volume: integer, sphere's assigned volume in voxels. Each voxel is assigned to one sphere only;
+	contact_surface: integer, sphere's contact area, an estimate of the voxels assigned to that sphere's volume that also belong to the pore space internal surface. 
 
 _all_nodes.txt : is the collection of all maximal spheres that completely fill the volume, the file is organized the same way as _nodes_skel.txt
 
