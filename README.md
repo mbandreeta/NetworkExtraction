@@ -1,11 +1,18 @@
 # NetworkExtraction
-Compiled version of the Max Ball Medial Axis algorithm
+Compiled version of the Max Ball Medial Axis algorithm. A full description of the algorithm is found on:
+
+[1] M. Barsi-Andreeta, E. Lucas-Oliveira, A. G. de Araujo-Ferreira, W. A. Trevizan, and T. J. Bonagamba, “Pore Network and Medial Axis simultaneous extraction through Maximal Ball Algorithm,” 2019.
+
+https://www.researchgate.net/publication/337885494_Pore_Network_and_Medial_Axis_simultaneous_extraction_through_Maximal_Ball_Algorithm
+
 This is a executable program for extracting a Medial Axis Pore Network from binary images of porous media.
- Usage: PoreNetworkMedial.exe Berea500.nii 2.25 
- The input parameters are a NIFITI type volume and the voxel resolution. The choice for NIFITI is to include Magnetic Resonance Imaging related images. 
-Here I have also included python scripts to load and save NIFITI type images using nibabel
+
+	PoreNetworkMedial.exe Berea500.nii 2.25 
+
+The input parameters are a NIFITI type volume and the voxel resolution. The choice for NIFITI is to include Magnetic Resonance Imaging related images. The networkIO file includes python scripts to load and save NIFITI type images using nibabel.
 
 The output are .txt files:
+
 	_validate.txt 
 	_skel.txt
 	_nodes_skel.txt
