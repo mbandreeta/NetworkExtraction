@@ -39,7 +39,7 @@ _skel.txt  : contains the edges of the medial axis, composed by three columns:
 	sphere1_id and sphere2_id: integers, indicating the connections between two spheres;
 	connection_diameter: float value, the diameter of the connection.
 
-_nodes_skel.txt : contains the node information of the spheres that composes medial axis network. The file is organized as follows:
+_nodes_skel.txt : contains the node information of the spheres that composes the medial axis network. The file is organized as follows:
 
 	sphere_id x_index y_index z_index radius isBorder border_type  volume contact_surface
 
