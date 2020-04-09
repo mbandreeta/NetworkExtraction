@@ -15,7 +15,9 @@ _edges_graph.txt
 The validate file contains:
 
 500 500 500 // the shape of the volume x,y,z
+
 Berea500.nii // name of the file
+
 2.25 // resolution that was input
 Total volume: 27094864 // total volume of the porous space in voxels
 :: Total sphere volume:27094864 // the total volume by summing the volume assigned to each sphere in voxels
