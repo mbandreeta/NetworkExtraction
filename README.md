@@ -28,7 +28,7 @@ The validate file contains:
 	:: Total sphere volume:27094864 : the total volume by summing the volume assigned to each sphere in voxels
 	Total internal surface: 10974798 : estimated internal surface of the pore space in voxels
 	:: Total sphere surface: 10974798 : total surface by summing the surface voxels assigned to each sphere in voxels
-	Porosity: 0.216759 : sample´s porosity (considering the shape in the first line)
+	Porosity: 0.216759 : sample's porosity 
 
 
 
