@@ -6,28 +6,21 @@ This is a executable program for extracting a Medial Axis Pore Network from bina
 Here I have also included python scripts to load and save NIFITI type images using nibabel
 
 The output are .txt files:
-_validate.txt 
-_skel.txt
-_nodes_skel.txt
-_all_nodes.txt
-_edges_graph.txt
+	_validate.txt 
+	_skel.txt
+	_nodes_skel.txt
+	_all_nodes.txt
+	_edges_graph.txt
 
 The validate file contains:
 
 	500 500 500 : the shape of the volume x,y,z
-
 	Berea500.nii : name of the file
-
 	2.25 : resolution that was input
-
 	Total volume: 27094864 : total volume of the porous space in voxels
-
 	:: Total sphere volume:27094864 : the total volume by summing the volume assigned to each sphere in voxels
-
 	Total internal surface: 10974798 : estimated internal surface of the pore space in voxels
-
 	:: Total sphere surface: 10974798 : total surface by summing the surface voxels assigned to each sphere in voxels
-
 	Porosity %: 0.216759 : sample´s porosity (considering the shape in the first line)
 
 
